@@ -1,0 +1,42 @@
+/* ===========================
+    Reset CSS
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+    Variáveis
+=========================== */
+
+:root {
+    --cor-fundo: #f8f9fa;
+    --cor-texto: #333333;
+    --cor-principal: #754ef9;
+    --cor-branca: #ffffff;
+}
+
+/* ===========================
+    Estilos Gerais
+=========================== */
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    padding: 20px 60px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
