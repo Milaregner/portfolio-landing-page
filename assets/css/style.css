@@ -17,6 +17,7 @@
     --cor-texto: #333333;
     --cor-principal: #754ef9;
     --cor-branca: #ffffff;
+    --cor-cabecalho: #ffffff;
 }
 
 /* ===========================
@@ -31,12 +32,65 @@ body {
 }
 
 
-header {
-    padding: 20px 60px;
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    padding: 35px 60px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-nav ul {
+.menu {
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    gap: 5rem;
     list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 0;
+}
+.menu a:hover {
+    color: var(--cor-principal);
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-titulo {
+    font-size: 3.5rem;
+    color: var(--cor-principal);
+    margin: 20px 0;
+}
+
+.hero-profissao {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-descricao {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #5f3fd6;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(117, 78, 249, 0.25);
 }
